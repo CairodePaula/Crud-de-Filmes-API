@@ -18,25 +18,6 @@ A aplicação utiliza **FastAPI** para construção da API, **MongoDB** como ban
 - 📦 Pydantic
 - 🔗 PyMongo
 
----
-
-## 📁 Estrutura do Projeto
-
-
-app/
-│
-├── main.py # Ponto de entrada da aplicação
-├── database.py # Conexão com MongoDB
-│
-├── routers/ # Rotas da API
-├── services/ # Lógica de negócio
-├── repositories/ # Acesso ao banco de dados
-├── schemas/ # Validação de dados (Pydantic)
-│
-├── Dockerfile # Configuração do container da API
-├── docker-compose.yaml # Orquestração dos serviços
-├── requirements.txt # Dependências do projeto
-
 
 ---
 
@@ -49,22 +30,13 @@ A aplicação segue o padrão de **arquitetura em camadas**, separando responsab
 - **Repository** → interage com o banco de dados
 - **Schema** → valida os dados de entrada e saída
 
-Fluxo da aplicação:
-
-
-Request → Router → Service → Repository → MongoDB
-↓
-Response ← Service ← Repository
-
-
----
 
 ## ▶️ Como executar o projeto
 
 ### 🔧 Pré-requisitos
 
 - Docker instalado
-- Docker Compose instalado
+- MongoDB Instalado
 
 ---
 
